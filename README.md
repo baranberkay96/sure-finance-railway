@@ -53,7 +53,7 @@ Sure is a Ruby on Rails application. Running it properly takes a Puma web proces
 
 **Email.** Sure sends mail over SMTP (`SMTP_ADDRESS`, `SMTP_PORT`, `SMTP_USERNAME`, `SMTP_PASSWORD`, `EMAIL_SENDER`). Railway allows outbound SMTP only on the Pro plan; on other plans keep `REQUIRE_EMAIL_CONFIRMATION=false` and invite people by link instead of by mail.
 
-**Scaling and upgrades.** Web and worker are stateless; raise `RAILS_MAX_THREADS` or add worker replicas for many accounts. Postgres and Redis keep state on volumes. To upgrade, eject the repo, change the tag and digest in `services/sure/Dockerfile`, and redeploy both Sure and Worker; migrations run when Sure starts and the Worker waits for them. Sure is pre-1.0 software: read the release notes and back up Postgres before upgrading.
+**Scaling and upgrades.** Web and worker are stateless (about 1 GB RAM in total for the stack at idle); raise `RAILS_MAX_THREADS` or add worker replicas for many accounts. Postgres and Redis keep state on volumes. To upgrade, eject the repo, change the tag and digest in `services/sure/Dockerfile`, and redeploy both Sure and Worker; migrations run when Sure starts and the Worker waits for them. Sure is pre-1.0 software: read the release notes and back up Postgres before upgrading.
 
 ### Why Deploy Sure on Railway?
 

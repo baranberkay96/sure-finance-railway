@@ -31,12 +31,12 @@ Required input: `SURE_OWNER_EMAIL`. Generated: `SURE_OWNER_PASSWORD` (24), `SECR
 
 | Service | Idle RAM | Typical | CPU |
 |---|---|---|---|
-| Sure | see report | 0.4–0.8 GB | low |
-| Worker | see report | 0.3–0.6 GB during syncs | low/bursty |
-| Postgres | ≈0.05–0.1 GB | 0.1–0.3 GB | low |
-| Redis | ≈0.01 GB | — | low |
+| Sure | 0.17–0.44 GB measured | 0.4–0.8 GB | low |
+| Worker | 0.42 GB measured | 0.4–0.7 GB during syncs/imports | low/bursty |
+| Postgres | 0.09–0.14 GB measured | 0.1–0.3 GB | low |
+| Redis | 0.03 GB measured | — | low |
 
-Estimated cost ≈ $6–12/month + volumes/bucket. Minimum plan: Hobby.
+Measured total ≈ 1.0 GB idle → ≈ $10–14/month + volumes/bucket. Minimum plan: Hobby.
 
 ## Verification checklist
 
