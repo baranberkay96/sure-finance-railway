@@ -1,5 +1,7 @@
 # Deploy and Host Sure with Railway
 
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/sure-personal-finance-rails-sidekiq-post?referralCode=20H68q)
+
 Sure is an open-source personal finance app, the community-maintained fork of Maybe Finance. It tracks net worth, accounts, investments, budgets and transactions, with rules, imports and an optional AI assistant. This template runs the complete self-hosted stack on Railway with your owner account created at the first start.
 
 ## About Hosting Sure
